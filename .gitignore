@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.log
+quota_widget.log
+
+# 本机运行态，不进仓库
+widget_config.json
+widget_pos.json
+widget_off.flag
+screenshots/_*.png
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
