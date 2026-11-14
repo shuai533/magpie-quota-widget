@@ -1,0 +1,122 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X 发文预览 · Magpie 额度浮窗</title><style>
+:root{--ink:#111418;--ink2:#4a5361;--line:#e6e8ec;--bg:#f7f8fa;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.08em;color:#6b7280;background:#eef0f4;border-radius:999px;padding:4px 10px;margin-bottom:14px}
+.wrap>h1{font-size:15px;color:var(--ink2);font-weight:600;margin:0 0 26px}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:40px 44px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 12px 32px -18px rgba(16,24,40,.18)}
+article h1{font-size:26px;color:var(--ink);margin:0 0 8px;letter-spacing:-.02em}
+article h2{font-size:22px;line-height:1.4;margin:38px 0 14px;letter-spacing:-.01em}
+article h2:first-child{margin-top:0}
+article p{margin:0 0 16px}
+article hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+article img{width:100%;border-radius:12px;border:1px solid var(--line);margin:10px 0 18px;display:block}
+article blockquote{margin:0 0 18px;padding:12px 16px;background:#f4f6f9;border-left:3px solid #cfd6e4;border-radius:0 10px 10px 0;color:var(--ink2);font-size:14px}
+article code{background:#f2f4f7;border-radius:5px;padding:2px 6px;font-size:13.5px;font-family:ui-monospace,Consolas,monospace}
+article pre{background:#111418;color:#e7ebf0;border-radius:12px;padding:16px 18px;overflow:auto;margin:0 0 18px}
+article pre code{background:none;color:inherit;padding:0;font-size:13.5px}
+article ol,article ul{padding-left:22px;margin:0 0 16px}
+article li{margin:6px 0}
+article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 18px}
+article th,article td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+article th{background:#f4f6f9;font-weight:600}
+.sep{margin:56px 0 26px;display:flex;align-items:center;gap:14px;color:#8b93a1;font-size:13px}
+.sep:before,.sep:after{content:"";height:1px;background:var(--line);flex:1}
+.note{font-size:13px;color:#8b93a1;margin-top:18px;line-height:1.7}
+.meta{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:22px;font-size:14.5px;color:var(--ink2)}
+.meta h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8b93a1;margin:0 0 10px;font-weight:600}
+.meta p{margin:0 0 8px}
+.meta ol{margin:0 0 10px;padding-left:20px}
+.meta blockquote{margin:0;background:none;border:0;padding:0;color:#8b93a1;font-size:13px}
+.meta strong{color:var(--ink)}
+</style></head>
+<body><div class="wrap">
+<div class="tag">DRAFT · 待发布</div>
+<h1>Magpie 额度浮窗 · X 发文预览（长文 + 引推）</h1>
+<div class="meta"><blockquote>
+<p>发布说明：正文按 X Article 排版写，<code>##</code> 小标题可直接作为分段加粗；两处图片为仓库相对路径，发推时上传 <code>screenshots/panel.png</code> 与 <code>screenshots/menu.png</code>。<br />
+仓库链接已填好。</p>
+</blockquote>
+<h2>备选标题（≤20 字，选一个）</h2>
+<ol>
+<li>别再猜还剩多少额度了</li>
+<li>桌角一个小面板，治好额度焦虑</li>
+<li>我把所有 AI 额度贴在桌面了</li>
+</ol>
+<p><strong>推荐：第 1 个。</strong></p></div>
+<article><p>先说个可能有点熟悉的小故事。</p>
+<p>我手上有好几个 AI 账号，都用同一个工具（叫 Magpie）管起来，平时用着挺顺。</p>
+<p>但有一种情况经常出现：敲一句话，转了两秒，后面弹出一段红字，说请求失败。</p>
+<p>不严重，但很打断思路。而且要发现原因，得挨个打开几个平台的后台，一页页翻，才看见——哦，那个"看起来最富"的号，其实前几天就用光了。</p>
+<p>问题真的不在模型，在我看不见。谁还剩多少、什么时候重新长回来，这些信息全散落在各家后台，得我自己去拼。</p>
+<p>所以我给自己做了个小东西，一直开在桌角：<strong>Magpie 额度浮窗</strong>。</p>
+<p>一句话介绍：一个小面板，一直待在屏幕角落，随时告诉你——刚才那句话是走哪条线出去的、实际用了哪个模型、这个模型大概排第几，还有各家额度还剩多少、多久之后刷新。</p>
+<p><img alt="额度浮窗本体" src="../screenshots/panel.png" /></p>
+<blockquote>
+<p>截图占位 1：<code>screenshots/panel.png</code> —— 浮窗本体。上半块"正在调用"，下半块"当天要用完"。</p>
+</blockquote>
+<p>面板分上下两块，都只有几行字。</p>
+<p>上半块告诉你"刚才那一下"：走的是免费那一路，模型是 M3.1-Flash，还剩 99%；另一路是 DeepSeek V4.1 Flash，剩 75%。名字后面的 <code>#38</code>、<code>#22</code> 是强弱榜的排名，方便判断这个模型值不值得指望——这个排名文件是可选的，没有就不显示，也不会报错。</p>
+<p>下半块是我用得最多的。它按"快过期"排序，最急的放最上面：小浣熊 100%，1.4 小时后刷新；讯飞那边 75%，也是 1.4 小时；ModelScope 100%，还有 11 小时。</p>
+<p>这里有个小体会想分享一下。</p>
+<p><code>75%</code> 看着挺宽裕，但如果一个多小时后就要清零，那它其实比 <code>40%</code>、还剩三天的那家"更穷"。所以"还有 1.4 小时"这个数字，比百分比有用得多。</p>
+<p><strong>额度不太像存款，更像牛奶——放着会过期。</strong></p>
+<p><img alt="右键菜单" src="../screenshots/menu.png" /></p>
+<blockquote>
+<p>截图占位 2：<code>screenshots/menu.png</code> —— 右键菜单，所有开关都在这里，没有独立设置窗口。</p>
+</blockquote>
+<p>想调什么，在面板上点右键就行，不需要另外开设置窗口。里面能调大小、透明度、是否总在最前面、是否跟着 Magpie 一起出现、要不要隐藏某个平台的付费额度、开机是否自动启动、折叠或展开、一键回到右下角。</p>
+<p>我自己常动的其实就三个：透明度调到 70% 再勾上"总在最前"，把它贴在编辑器右上角，看得见又不挡代码；折叠起来只留一句结论；还有"跟随 Magpie"——Magpie 一关，它自己就消失了，桌面干干净净。</p>
+<h2>怎么装：不会写代码也能搞定</h2>
+<p>需要的东西不多：一台 Windows 10 或 11 的电脑、装好 Python 3.10 以上（去 python.org 下官方安装包就行，默认是完整的）、Magpie 正在运行。</p>
+<p><strong>最省事的办法：交给 AI 装。</strong></p>
+<p>把仓库地址复制给你常用的 AI 助手（Claude Code、Codex、WorkBuddy 这类能操作你电脑的），再补一句话：</p>
+<blockquote>
+<p>按仓库里的 SKILL.md，帮我装好这个 Magpie 额度浮窗。</p>
+</blockquote>
+<p>仓库里那份 <code>SKILL.md</code> 就是专门写给 AI 看的说明书，检查环境、安装、验证、出问题怎么修，都写好了。你只需要看它最后报一句"装好了"。</p>
+<p><strong>想自己动手的：三行命令。</strong></p>
+<pre><code class="language-powershell">git clone https://github.com/qilijuan82065773-arch/magpie-quota-widget.git
+cd magpie-quota-widget
+powershell -ExecutionPolicy Bypass -File install.ps1
+</code></pre>
+<p>跑完就完事了。它会自动找到 Python、检查必要组件、设置开机自启、在桌面放一个「打开额度浮窗」的图标，然后把面板拉起来。</p>
+<p>以后想关掉不想要了，在同一个文件夹里跑 <code>uninstall.ps1</code>，会清理干净。</p>
+<p>如果你的 Magpie 不在本机（比如跑在另一台电脑或者容器里），启动前先告诉它地址：<code>set MAGPIE_BASE=http://你的地址:3425</code>。</p>
+<h2>几个我踩过的小坑，提前说一下</h2>
+<p><strong>点 × 是真的关掉。</strong> 它在后台有个小守卫，挂了会自动拉起来。但你亲手点的 ×，它认，不会再烦你。想再打开，双击桌面那个图标就好。反过来说，别去任务管理器里杀 Python 进程——过十秒它自己又回来了，会以为你没关成功。</p>
+<p><strong>可以同时开两个。</strong> 如果你本机一个 Magpie、远程一个，设个不同的端口号就能并排放着看。</p>
+<p><strong>万一拖到屏幕外面了也别紧张。</strong> 它会记住位置，但发现跑到屏幕外就自己回到右下角。真找不着，右键点"回到右下角"。</p>
+<p><strong>高分屏不用手动调。</strong> 150% 缩放下字也不会糊成一团，它自己会按比例排。</p>
+<h2>几个可能遇到的问题</h2>
+<p><strong>装了但看不见面板。</strong> 按顺序试：确认 Python 是 3.10 以上；确认 Magpie 在跑；看看是不是已经有一个在运行了（同一个面板不会重复开第二个）。都正常的话，双击桌面的图标。</p>
+<p><strong>打开了，但一个额度都没有。</strong> 说明它连上了，只是没人告诉它还有多少——可能是某个订阅到期了，也可能那个分组里没有可用的账号。这种情况我一般直接用浏览器打开网关的额度地址看一眼，比猜快。</p>
+<p><strong>提示少了 tkinter。</strong> 这是 Python 的一个画界面组件。用 python.org 的官方安装包重装一次，选 Modify，把 tcl/tk 那一项勾上就好。有些精简版或者用包管理器装的 Python 会把它省略掉。</p>
+<p><strong>端口被占了。</strong> 换一个数字就行，设置里改一下端口号再启动。</p>
+<h2>关于安全，我得说清楚</h2>
+<p>这类"常驻桌面、还能看到你账号信息"的小工具，谨慎一点是应该的。所以我尽量把它做笨一点。</p>
+<p>它只做一件事：读。去网关问一句"现在还剩多少"，把结果画出来。不写配置、不改路由、不碰你的账号。它连你的密钥都不需要知道——百分比是网关算好给它的，它只是搬运。</p>
+<p>整个东西就是一个 Python 文件，一千行左右，全部用 Python 自带的库，没有第三方依赖、没有自动更新、没有数据上报、没有"请登录以同步"。你可以花十分钟从头翻一遍再运行——这句话我是认真的，常驻桌面的软件应该经得起这种检查。不放心的话，也可以把代码丢给 AI，让它帮你看一遍有没有往外发数据。</p>
+<h2>适合谁，不太适合谁</h2>
+<p><strong>可能适合你</strong>：用 Windows，手上有两家以上 AI 订阅，每天都要判断"这个活儿该丢给免费那路还是留着用好的"。</p>
+<p><strong>大概不适合</strong>：用 Mac 或 Linux 的（理论上也许能跑，但我没适配，不想让你白折腾）；只用一家官方接口、从来不担心额度的；还有桌面必须绝对干净、一个图标都不能多的人——真的，这个就别装了。</p>
+<h2>最后</h2>
+<p>仓库在这里：<code>https://github.com/qilijuan82065773-arch/magpie-quota-widget</code></p>
+<p>如果它也能帮你省掉几次"怎么又报错了"的困惑，欢迎点个 Star。也可以转给那位经常问你"你那边还有额度吗"的朋友。</p>
+<p>有什么想加的，评论区告诉我。比如把剩余额度换算成钱、或者把"还有 1.4 小时"改成"大概还能跑几个任务"——我看看哪个呼声高就先做哪个。</p>
+<p><em>（本文所述为个人使用体验，工具仅供自用参考。）</em></p></article>
+<div class="sep">引推（≤280 字）</div>
+<article><blockquote>
+<p>用于给长文导流，发完长文后在主号发这条，链接放文末或首条回复。</p>
+</blockquote>
+<p>又碰上一次：一句话发出去，转了两秒，回来一段红字报错。</p>
+<p>翻了几个平台后台才发现——那个"看起来最富"的号，额度早就用光了。</p>
+<p>所以我给自己做了个小面板，一直挂在桌角：刚才走了哪条线、用了哪个模型、各家还剩多少、多久之后刷新，一眼看到。</p>
+<p>额度不太像存款，更像牛奶，放着会过期。</p>
+<p>Windows + Python 3.10，三行命令装完。纯 Python 自带库，只读，不碰账号。</p>
+<p>详细教程和仓库 👇</p></article>
+<p class="note">图片是真实截图（已裁掉桌面背景，不含邮箱与账号信息）。X 编辑框里用「上传图片」插入 screenshots/panel.png 与 screenshots/menu.png。</p>
+</div></body></html>
