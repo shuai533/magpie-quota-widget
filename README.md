@@ -35,7 +35,7 @@ Windows 10/11 · Python 3.10+（自带 tkinter 即可）· 纯标准库，零依
 ### 方式一：命令行（推荐）
 
 ```powershell
-git clone https://github.com/qilijuan82065773-arch/magpie-quota-widget.git
+git clone https://github.com/shuai533/magpie-quota-widget.git
 cd magpie-quota-widget
 powershell -ExecutionPolicy Bypass -File install.ps1
 ```
