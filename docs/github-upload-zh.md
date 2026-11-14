@@ -5,7 +5,7 @@
 
 ## 0. 占位符已填好
 
-用户名已填为 `qilijuan82065773-arch`：`LICENSE` 第 3 行、README 的 clone 链接、长文里的仓库链接都已替换，无需再改。
+用户名已填为 `shuai533`：`LICENSE` 第 3 行、README 的 clone 链接、长文里的仓库链接都已替换，无需再改。
 
 ## 1. 装工具（只装一次）
 
@@ -44,7 +44,7 @@ gh repo create magpie-quota-widget --public --source=. --remote=origin --push
 不想用 gh 也行：网页新建空仓库（**不要**勾 README / .gitignore / license），然后
 
 ```powershell
-git remote add origin https://github.com/qilijuan82065773-arch/magpie-quota-widget.git
+git remote add origin https://github.com/shuai533/magpie-quota-widget.git
 git branch -M main
 git push -u origin main
 ```

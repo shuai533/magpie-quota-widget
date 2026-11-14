@@ -1,7 +1,7 @@
 # X 长文（中文）· Magpie 额度浮窗
 
 > 发布说明：正文按 X Article 排版写，`##` 小标题可直接作为分段加粗；两处图片为仓库相对路径，发推时上传 `screenshots/panel.png` 与 `screenshots/menu.png`。
-> 仓库链接已填好：https://github.com/qilijuan82065773-arch/magpie-quota-widget
+> 仓库链接已填好：https://github.com/shuai533/magpie-quota-widget
 
 ## 备选标题（≤20 字，选一个）
 
@@ -66,7 +66,7 @@
 **想自己动手的：三行命令。**
 
 ```powershell
-git clone https://github.com/qilijuan82065773-arch/magpie-quota-widget.git
+git clone https://github.com/shuai533/magpie-quota-widget.git
 cd magpie-quota-widget
 powershell -ExecutionPolicy Bypass -File install.ps1
 ```
@@ -113,7 +113,7 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 ## 最后
 
-仓库在这里：`https://github.com/qilijuan82065773-arch/magpie-quota-widget`
+仓库在这里：`https://github.com/shuai533/magpie-quota-widget`
 
 如果它也能帮你省掉几次"怎么又报错了"的困惑，欢迎点个 Star。也可以转给那位经常问你"你那边还有额度吗"的朋友。
 
